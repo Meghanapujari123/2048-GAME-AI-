@@ -1,32 +1,88 @@
-# 2048 Game with AI
+# 🎮 2048 Game — Human vs AI Agent
 
-A browser-based implementation of the popular 2048 game with two modes:
-- **Manual Play**: Use arrow keys to play yourself.
-- **AI Mode**: Uses the Expectimax algorithm to play automatically.
+A beautifully designed and functional version of the classic [2048 game](https://play2048.co/), enhanced with both **Human Play Mode** and an **AI Agent (Expectimax)** that plays the game automatically!
 
-## Features
+Built entirely using **HTML**, **CSS (Tailwind)**, and **JavaScript** — no frameworks required.
 
-- Clean UI with animations and score tracking
-- Standalone HTML game (no server or install needed)
-- AI auto-play using Expectimax decision-making
-- Responsive design
+---
 
-##  Tech Stack
+## 🚀 Features
 
-- HTML
-- CSS
-- JavaScript
+- 🎯 **Play as Human** — Use keyboard arrow keys or swipe gestures.
+- 🤖 **Watch AI Play** — Powered by a smart **Expectimax algorithm** with adaptive depth.
+- ⚡ **Turbo Mode** — Let the AI go beast mode with fast decision-making.
+- 🔁 **Undo Feature** (for human mode).
+- 📈 **Score Tracking** — With Best Score saved using `localStorage`.
+- 🎨 Responsive UI with clean tile animations and dynamic styles.
 
-##  Demo
+---
 
-Includes a demo video: `Results.mov`
+## 📽️ Gameplay Preview
 
-##  Run the Game
+Open `results.mov` to preview gameplay in action!
 
-Just open `index.html` or `2048AI.html` in your browser.
+---
 
-##  Future Improvements
+## 📁 File Structure
 
-- Difficulty levels
-- Leaderboard integration
-- Mobile UI enhancement
+
+📂 project-folder/
+├── index.html # Main HTML file (structure only)
+├── style.css # Tile styles, transitions, animations
+├── script.js # All game logic, input handling, and AI agent
+└── results.mov # Gameplay video preview
+
+---
+
+## 🧠 About the AI Agent
+
+The AI uses the **Expectimax algorithm**, which:
+- Simulates possible game states
+- Applies a **heuristic scoring function** that values:
+  - Empty tiles
+  - Smoothness
+  - Merge potential
+  - Corner tile bonus
+  - Weighted positions
+- Dynamically adjusts search **depth** based on board complexity
+
+It chooses moves that **maximize expected future score** — just like a real strategy player.
+
+---
+
+## 🕹️ How to Play
+
+### Human Mode:
+- Press `Play as Human`
+- Use **Arrow Keys** on desktop
+- Or **Swipe** on mobile/touch devices
+
+### AI Mode:
+- Press `Watch AI Play`
+- Enable **Turbo Mode** if you want rapid decisions
+
+---
+
+## 🛠️ Tech Stack
+
+- **HTML5**
+- **Tailwind CSS**
+- **Vanilla JavaScript**
+- **Remix Icon CDN**
+
+---
+
+## 📦 Installation & Usage
+
+
+```bash
+git clone https://github.com/your-username/2048-ai-game.git
+cd 2048-ai-game
+# Then just open index.html in your browser
+Or just double-click the index.html file in your system.
+
+---
+
+
+
+
